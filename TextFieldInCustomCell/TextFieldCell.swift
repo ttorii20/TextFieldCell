@@ -8,17 +8,37 @@
 
 import UIKit
 
-class TextFieldCell: UITableViewCell {
-
+class TextFieldCell: UITableViewCell, UITextFieldDelegate {
+    
+    @IBOutlet weak var textField: UITextField!
+    
+    //変更後に実行するクロージャ
+    private var block: ((_ changeText : String) -> () )? = nil
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+        
+        //TextFieldのDelegateをCellに設定
+        self.textField.delegate = self
     }
     
+    
+    func setup(initText: String , block: @escaping (_ changeText: String) -> ()  ) {
+        self.textField.text = initText
+        self.block = block
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        
+        if let block = self.block , let text = textField.text {
+            block( text )
+            
+        }
+    }
 }

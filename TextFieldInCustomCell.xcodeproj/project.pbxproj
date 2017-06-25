@@ -14,6 +14,8 @@
 		CC8638FE1EFF914A00364EF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC8638FC1EFF914A00364EF5 /* LaunchScreen.storyboard */; };
 		CC8639091EFF914B00364EF5 /* TextFieldInCustomCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8639081EFF914B00364EF5 /* TextFieldInCustomCellTests.swift */; };
 		CC8639141EFF914B00364EF5 /* TextFieldInCustomCellUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8639131EFF914B00364EF5 /* TextFieldInCustomCellUITests.swift */; };
+		CCF74ACD1EFF946200831E67 /* TextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF74ACB1EFF946200831E67 /* TextFieldCell.swift */; };
+		CCF74ACE1EFF946200831E67 /* TextFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCF74ACC1EFF946200831E67 /* TextFieldCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		CC86390F1EFF914B00364EF5 /* TextFieldInCustomCellUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextFieldInCustomCellUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC8639131EFF914B00364EF5 /* TextFieldInCustomCellUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldInCustomCellUITests.swift; sourceTree = "<group>"; };
 		CC8639151EFF914B00364EF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCF74ACB1EFF946200831E67 /* TextFieldCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldCell.swift; sourceTree = "<group>"; };
+		CCF74ACC1EFF946200831E67 /* TextFieldCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextFieldCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 			children = (
 				CC8638F31EFF914A00364EF5 /* AppDelegate.swift */,
 				CC8638F51EFF914A00364EF5 /* ViewController.swift */,
+				CCF74ACB1EFF946200831E67 /* TextFieldCell.swift */,
+				CCF74ACC1EFF946200831E67 /* TextFieldCell.xib */,
 				CC8638F71EFF914A00364EF5 /* Main.storyboard */,
 				CC8638FA1EFF914A00364EF5 /* Assets.xcassets */,
 				CC8638FC1EFF914A00364EF5 /* LaunchScreen.storyboard */,
@@ -238,6 +244,7 @@
 				CC8638FE1EFF914A00364EF5 /* LaunchScreen.storyboard in Resources */,
 				CC8638FB1EFF914A00364EF5 /* Assets.xcassets in Resources */,
 				CC8638F91EFF914A00364EF5 /* Main.storyboard in Resources */,
+				CCF74ACE1EFF946200831E67 /* TextFieldCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +271,7 @@
 			files = (
 				CC8638F61EFF914A00364EF5 /* ViewController.swift in Sources */,
 				CC8638F41EFF914A00364EF5 /* AppDelegate.swift in Sources */,
+				CCF74ACD1EFF946200831E67 /* TextFieldCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +522,7 @@
 				CC86391A1EFF914B00364EF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CC86391B1EFF914B00364EF5 /* Build configuration list for PBXNativeTarget "TextFieldInCustomCellTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +531,7 @@
 				CC86391D1EFF914B00364EF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CC86391E1EFF914B00364EF5 /* Build configuration list for PBXNativeTarget "TextFieldInCustomCellUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +540,7 @@
 				CC8639201EFF914B00364EF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
